@@ -4,7 +4,7 @@
 
 # Interactive Character Carousel
 
-This project is an interactive carousel showcasing unique character profiles, each with a detailed backstory and special abilities. The carousel features hover effects, action buttons, and an image download functionality, creating an engaging and immersive user experience.
+This project is an interactive carousel showcasing unique character profiles, each with a detailed backstory and special abilities. The carousel features hover effects, action buttons, image download functionality, and keyboard navigation, creating an engaging and immersive user experience.
 
 ## Table of Contents
 - [Features](#features)
@@ -17,6 +17,7 @@ This project is an interactive carousel showcasing unique character profiles, ea
 - [Character Profiles](#character-profiles)
 - [Hover Effect](#hover-effect)
 - [Image Download Functionality](#image-download-functionality)
+- [Keyboard Navigation](#keyboard-navigation)
 
 ## Features
 - **Interactive Carousel**: Horizontally scrollable list of character profiles.
@@ -24,11 +25,12 @@ This project is an interactive carousel showcasing unique character profiles, ea
 - **Detailed Profiles**: Each character profile includes an image, author, title, topic, and description.
 - **Action Buttons**: "SEE MORE" and "EXPLORE" buttons for additional interaction.
 - **Image Download**: A download button allows users to download character images with filenames matching the image IDs.
+- **Keyboard Navigation**: Navigate through the carousel using keyboard arrow keys.
 
 ## Technologies Used
 - **HTML**: For structuring the carousel and character profiles.
 - **CSS**: For styling and hover effects.
-- **JavaScript**: For adding interactivity and download functionality.
+- **JavaScript**: For adding interactivity, download functionality, and keyboard navigation.
 
 ## Installation
 1. **Clone the repository:**
@@ -46,6 +48,7 @@ This project is an interactive carousel showcasing unique character profiles, ea
 2. **Click "SEE MORE"** to view additional details about the character.
 3. **Click "EXPLORE"** to explore related content or actions.
 4. **Click the download button** to download the character image. The image will be saved with a filename matching the image ID.
+5. **Use keyboard arrow keys** to navigate through the carousel.
 
 ## Project Structure
 ```
@@ -135,5 +138,25 @@ document.querySelectorAll('.downloadbtn').forEach(button => {
         link.click();
         document.body.removeChild(link);
     });
+});
+```
+
+## Keyboard Navigation
+The keyboard navigation functionality allows users to navigate through the carousel using the left and right arrow keys.
+
+### JavaScript for Keyboard Navigation
+```javascript
+document.addEventListener('keydown', (e) => {
+    const activeElement = document.activeElement;
+    const items = document.querySelectorAll('.thumbnail .item');
+    let newIndex;
+
+    if (e.key === 'ArrowRight') {
+        newIndex = (Array.from(items).indexOf(activeElement) + 1) % items.length;
+        items[newIndex].focus();
+    } else if (e.key === 'ArrowLeft') {
+        newIndex = (Array.from(items).indexOf(activeElement) - 1 + items.length) % items.length;
+        items[newIndex].focus();
+    }
 });
 ```
