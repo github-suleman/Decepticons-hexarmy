@@ -160,3 +160,22 @@ document.addEventListener('keydown', (e) => {
     }
 });
 ```
+
+
+Sure! Here's a brief "About Me" section for your GitHub profile:
+
+---
+
+### Hi there 👋
+
+### 🔭 About Me
+- 🌱 New to GitHub but a fast learner
+- 💻 Passionate about coding and technology
+- 📚 Always eager to learn and explore new things
+- 🎯 Focused on continuous improvement and growth
+- 🚀 Ready to collaborate and contribute to exciting projects
+
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=Angxddeep&count_private=true&theme=algolia&hide_border=true&border_radius=10&showicons=true)]()
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Angxddeep&theme=tokyonight-duo&hide_border=true)](https://git.io/streak-stats)
+
+![](https://komarev.com/ghpvc/?username=Angxddeep&color=blue)
