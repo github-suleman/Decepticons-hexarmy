@@ -166,6 +166,10 @@ Sure! Here's a brief "About Me" section for your GitHub profile:
 
 ---
 
+Got it! Here's the updated version with your correct username:
+
+---
+
 ### Hi there 👋
 
 ### 🔭 About Me
@@ -175,7 +179,9 @@ Sure! Here's a brief "About Me" section for your GitHub profile:
 - 🎯 Focused on continuous improvement and growth
 - 🚀 Ready to collaborate and contribute to exciting projects
 
-[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=Angxddeep&count_private=true&theme=algolia&hide_border=true&border_radius=10&showicons=true)]()
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Angxddeep&theme=tokyonight-duo&hide_border=true)](https://git.io/streak-stats)
+### 📊 GitHub Stats
 
-![](https://komarev.com/ghpvc/?username=Angxddeep&color=blue)
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=github-suleman&count_private=true&theme=algolia&hide_border=true&border_radius=10&showicons=true)]()
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=github-suleman&theme=tokyonight-duo&hide_border=true)](https://git.io/streak-stats)
+
+![](https://komarev.com/ghpvc/?username=github-suleman&color=blue)
